@@ -1,0 +1,60 @@
+{
+    "key": "group_623dc22dd50e2",
+    "title": "Discipline Page Projects",
+    "fields": [
+        {
+            "key": "field_623dc2395811f",
+            "label": "Projects",
+            "name": "projects",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "architecture",
+                "id": "projects_selector"
+            },
+            "post_type": [
+                "portfolio_project"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object",
+            "bidirectional_target": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "461"
+            }
+        ],
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "458"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1749831837
+}

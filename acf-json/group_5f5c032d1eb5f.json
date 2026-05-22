@@ -1,0 +1,726 @@
+{
+    "key": "group_5f5c032d1eb5f",
+    "title": "Campaign Section",
+    "fields": [
+        {
+            "key": "field_5f5c032d23e44",
+            "label": "Campaign Content",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Everything below belongs to Campaign content",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5f5c036dcf6e7",
+            "label": "Campaigns",
+            "name": "campaigns",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Campaign",
+            "sub_fields": [
+                {
+                    "key": "field_5f5c032d23e83",
+                    "label": "Navigation Options",
+                    "name": "campaign_navigation_options",
+                    "aria-label": "",
+                    "type": "checkbox",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f58008f142ad",
+                                "operator": "==",
+                                "value": "PDF Post"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5f58008f142ad",
+                                "operator": "==",
+                                "value": "Manifesto Post"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5f58008f142ad",
+                                "operator": "==",
+                                "value": "Editorial Post"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Slide Out Nav": "Slide Out Nav",
+                        "Top Page Nav": "Top Page Nav"
+                    },
+                    "allow_custom": 0,
+                    "default_value": [],
+                    "layout": "horizontal",
+                    "toggle": 0,
+                    "return_format": "array",
+                    "save_custom": 0,
+                    "custom_choice_button_text": "Add new choice",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5ff28578da7",
+                    "label": "Campaign Top Nav Image\/Icon",
+                    "name": "campaign_top_page_nav_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Please be consistent with the image sizes. Use 4:5 ration and width not more then 800px.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f5c032d23e83",
+                                "operator": "==",
+                                "value": "Top Page Nav"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23ec3",
+                    "label": "Campaign Title",
+                    "name": "campaign_image_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title overlaid the image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Title",
+                    "placeholder": "Title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23f01",
+                    "label": "Campaign Subtitle",
+                    "name": "campaign_image_subtitle",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Subtitle overlaid the image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Title",
+                    "placeholder": "Title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23f3e",
+                    "label": "Campaign Background Image",
+                    "name": "campaign_background_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23f7c",
+                    "label": "Title",
+                    "name": "campaign_title_copy",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Title overlaid the image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Title",
+                    "placeholder": "Title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23fba",
+                    "label": "Subtitle",
+                    "name": "campaign_subtitle",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Subtitle overlaid the image.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Title",
+                    "placeholder": "Title",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d23ff8",
+                    "label": "Content",
+                    "name": "campaign_content",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 6,
+                    "new_lines": "",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5feda878da4",
+                    "label": "Add Campaign Breaking Line",
+                    "name": "campaign_breaking_line",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "On",
+                    "ui_off_text": "Off",
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                },
+                {
+                    "key": "field_5f5c032d24035",
+                    "label": "Posts",
+                    "name": "campaign_posts",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Add Post",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f5c032d3652b",
+                            "label": "Post Type",
+                            "name": "campaign_post_type",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "PDF Post": "PDF Post",
+                                "Manifesto Post": "Manifesto Post",
+                                "Editorial Post": "Editorial Post"
+                            },
+                            "default_value": false,
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d3656a",
+                            "label": "Post Link\/PDF Link",
+                            "name": "campaign_post_link",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d365a8",
+                            "label": "Post Title",
+                            "name": "campaign_post_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d365e5",
+                            "label": "Post Date",
+                            "name": "campaign_post_date",
+                            "aria-label": "",
+                            "type": "date_picker",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "display_format": "F j, Y",
+                            "return_format": "F j, Y",
+                            "first_day": 1,
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d36623",
+                            "label": "Secondary Post Title",
+                            "name": "campaign_secondary_post_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d36661",
+                            "label": "Post Text",
+                            "name": "campaign_post_text",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 5,
+                            "new_lines": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d3669f",
+                            "label": "Text Expand (+)",
+                            "name": "campaign_post_text_expando",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d366dc",
+                            "label": "Post Image",
+                            "name": "campaign_post_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5c032d3671a",
+                            "label": "Navigation Options",
+                            "name": "campaign_navigation_options",
+                            "aria-label": "",
+                            "type": "checkbox",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "PDF Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Manifesto Post"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "field": "field_5f5c032d3652b",
+                                        "operator": "==",
+                                        "value": "Editorial Post"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Slide Out Nav": "Slide Out Nav",
+                                "Top Page Nav": "Top Page Nav"
+                            },
+                            "allow_custom": 0,
+                            "default_value": [],
+                            "layout": "horizontal",
+                            "toggle": 0,
+                            "return_format": "array",
+                            "save_custom": 0,
+                            "custom_choice_button_text": "Add new choice",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5fef2e78da5",
+                            "label": "Campaign Post Top Nav Image\/Icon",
+                            "name": "campain_post_top_nav_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "Please be consistent with the image sizes. Use 4:5 ration and width not more then 800px.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f5c032d3671a",
+                                        "operator": "==",
+                                        "value": "Top Page Nav"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "parent_repeater": "field_5f5c032d24035"
+                        },
+                        {
+                            "key": "field_5f5fef9778da6",
+                            "label": "Add Post Breaking Line",
+                            "name": "campaign_post_breaking_line",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "On",
+                            "ui_off_text": "Off",
+                            "parent_repeater": "field_5f5c032d24035"
+                        }
+                    ],
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_5f5c036dcf6e7"
+                }
+            ],
+            "rows_per_page": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "single-microsites-template.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1749831817
+}

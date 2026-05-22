@@ -1,0 +1,503 @@
+{
+    "key": "group_62f296b290cd5",
+    "title": "Blog",
+    "fields": [
+        {
+            "key": "field_62f296bc750b9",
+            "label": "Subtitle",
+            "name": "subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_630cfb9ea69a2",
+            "label": "Hero Image Position",
+            "name": "hero_pos",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "To adjust the vertical position of the hero image position put a value here that will adjust the top position. To provide maximum flexibility this uses CSS syntax such as  top:-200px;\r\nOther potential attributes are: width, height, margin-top, margin-left, etc.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_630d060f7e810",
+            "label": "Hero Image Position Tablet",
+            "name": "hero_pos_tablet",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Example:  top:-100px;",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_630d04ff04881",
+            "label": "Hero Image Position Mobile",
+            "name": "hero_pos_mobile",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Example: top:0px;",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64210c10e174f",
+            "label": "Thumb Position",
+            "name": "thumb_pos",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "To adjust the position of the thumb position put a value here that will adjust the background position. Reference: https:\/\/developer.mozilla.org\/en-US\/docs\/web\/css\/background-position Example: background-position: bottom; or background-position: center;",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64210c1fe1750",
+            "label": "Thumb Position Tablet",
+            "name": "thumb_pos_tablet",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Example: background-position: bottom; or background-position: center;",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64210c32e1751",
+            "label": "Thumb Position Mobile",
+            "name": "thumb_pos_mobile",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Example: background-position: bottom; or background-position: center;",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_64210a67d29b0",
+            "label": "Custom Thumbnail",
+            "name": "custom_thumb",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "If you'd like an alternate thumb for this post then choose it here. Otherwise the thumb will be the same as the Featured Image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6647aab7d4ea1",
+            "label": "Photo Credit",
+            "name": "photo_credit",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Photo credit for the hero image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "100",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_66302644107e2",
+            "label": "Byline",
+            "name": "byline",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6632111954e6e",
+            "label": "Author Width",
+            "name": "author_width",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "CSS Width of Author. Example: 200px (default) or 20%",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6630267df16cd",
+            "label": "Authors",
+            "name": "authors",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "When using Team Member all fields will populate automatically from OpenAsset. OpenAsset data can be overridden by filling in a field. To leave a field blank enter a space.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6630272031334",
+                    "label": "Open Asset ID",
+                    "name": "open_asset_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62f296bc750b9",
+                                "operator": "==",
+                                "value": "do-not-show"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "10",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_66429ef4dc551",
+                    "label": "Team Member",
+                    "name": "author_teammember",
+                    "aria-label": "",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "team_project"
+                    ],
+                    "post_status": "",
+                    "taxonomy": "",
+                    "return_format": "id",
+                    "multiple": 0,
+                    "allow_null": 1,
+                    "bidirectional": 0,
+                    "ui": 1,
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_66302745ed0bd",
+                    "label": "Author Name",
+                    "name": "author_name",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_663027809971c",
+                    "label": "Author Title",
+                    "name": "author_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6631fc3780a60",
+                    "label": "Author Email",
+                    "name": "author_email",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6631fc5780a61",
+                    "label": "Author Phone",
+                    "name": "author_phone",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6630278e9971d",
+                    "label": "Author Pic",
+                    "name": "author_pic",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6631fc5f80a62",
+                    "label": "Author LinkedIn",
+                    "name": "author_linkedin",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6631fc8480a63",
+                    "label": "Author Instagram",
+                    "name": "author_instagram",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6630267df16cd"
+                },
+                {
+                    "key": "field_6631fcbb80a64",
+                    "label": "Author Bio",
+                    "name": "author_bio",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "parent_repeater": "field_6630267df16cd"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1749831807
+}

@@ -1,0 +1,145 @@
+h1.entry-title {
+    font-size: 60px !important;
+		font-family: 'GothamNarrow-Light' !important;
+		color:#fff;
+		text-shadow: black 2px 2px;
+		margin-top: -90px;
+		/*padding: 0px 50px;*/
+		margin-left:140px;
+    z-index: 10;
+    position: absolute;
+}
+#blogcontent{
+	  width:50%;
+		margin-left:140px;
+		margin-top:70px;
+		display:inline-block;
+}
+#blogcontent p {
+    font-size: 18px;
+    line-height: 22px;
+}
+#subtitle{
+		font-weight:700;
+		font-family: 'GothamNarrow-Book' !important;
+    font-size: 28px !important;
+    line-height: 1.3em !important;
+}
+#datediv{
+	  font-size:22px;
+		font-weight:500;
+		margin-bottom:30px;
+}
+.filtersection {
+		display:block;
+}
+#rightside {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+		margin-top:70px;
+		margin-left:40px;
+}
+#filterpanel{
+	margin-bottom:20px;
+	font-size:28px;
+	font-weight:600;
+  display:inline-block;
+}
+a.blogcategory{
+	font-size:20px;
+	font-weight:500;
+	display:block;
+}
+a.blogcategory:hover{
+	color: brown;
+}
+a.articletitle{
+	font-weight:700;
+	font-size:26px;
+	display:block;
+}
+a.articletitle:hover{
+	color: brown !important;
+
+}
+.articledate{
+	font-size:22px;
+	font-weight:500;
+}
+#trendingpanel{
+		margin-top:90px;
+		font-size:28px;
+		font-weight:600;
+}
+.post-thumbnail {
+    height: 400px;
+    overflow: hidden;
+}
+.post-thumbnail img {
+		width:100%;
+    height: auto;
+
+}
+nav.navigation.post-navigation {
+    text-align: center;
+}
+.nav-links {
+    margin:20px;
+    text-align: center;
+		display: inline-block;
+		width:80%;
+		margin:auto;
+		max-width: 1140px;
+		padding:20px;
+		font-weight:600;
+		font-size:18px;
+}
+
+.nav-previous {
+    float: left;
+}
+.nav-next {
+    float: right;
+}
+.divider{
+	width:100%;
+	height:10px;
+	line-height:10px;
+	border-top:1px solid #333;
+	display:inline-block;
+}
+
+#cta_arrow {
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+footer.entry-footer {
+    display: none;
+}
+/* tablet  */
+@media(max-width:1300px) {
+	.post-thumbnail {
+    height: 200px;
+	}
+	h1.entry-title {
+    font-size: 30px !important;
+		line-height:34px !important;
+		margin-top: -70px;
+		padding: 0px 40px;
+	}
+}
+
+/* mobile  */
+@media(max-width:700px) {
+	.post-thumbnail {
+    height: 200px;
+	}
+	h1.entry-title {
+    font-size: 24px !important;
+		line-height:28px !important;
+		margin-top: -120px;
+		padding: 0px 20px;
+	}
+}

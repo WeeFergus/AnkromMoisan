@@ -1,0 +1,363 @@
+{
+    "key": "group_5f46d607ed217",
+    "title": "Microsites Breadcrumb",
+    "fields": [
+        {
+            "key": "field_5f46d6318733f",
+            "label": "Select Discipline",
+            "name": "select_discipline",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Architecture": "Architecture",
+                "Interiors": "Interiors",
+                "Planning": "Planning",
+                "Brand": "Brand"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d6a187340",
+            "label": "Select Sector",
+            "name": "select_sector",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "HOUSING": "HOUSING",
+                "OFFICE": "OFFICE",
+                "SENIOR COMMUNITIES": "SENIOR COMMUNITIES",
+                "HEALTHCARE": "HEALTHCARE",
+                "HIGHER EDUCATION": "HIGHER EDUCATION",
+                "HOSPITALITY": "HOSPITALITY",
+                "RETAIL": "RETAIL",
+                "COMMUNITY": "COMMUNITY"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d76287341",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "HOUSING"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Affordable Housing": "Affordable Housing",
+                "Mid-Rise": "Mid-Rise",
+                "High-Rise": "High-Rise",
+                "Urban Living Interiors": "Urban Living Interiors"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d7b687342",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "OFFICE"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Corporate": "Corporate",
+                "Landlord": "Landlord",
+                "Workplace Interiors": "Workplace Interiors",
+                "Core and Shell": "Core and Shell"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d7f587343",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "SENIOR COMMUNITIES"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Not for Profit": "Not for Profit",
+                "Senior Living": "Senior Living"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d83c87344",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "HEALTHCARE"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Behavioral Health": "Behavioral Health",
+                "Ambulatory Care": "Ambulatory Care",
+                "Acute Care": "Acute Care",
+                "Wellness": "Wellness"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d8929d584",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "HIGHER EDUCATION"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Learning Centers": "Learning Centers",
+                "Student Housing": "Student Housing",
+                "Classroom and Office": "Classroom and Office"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d8bf9d585",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "HOSPITALITY"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Hotels and Resorts": "Hotels and Resorts"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d8d89d586",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "RETAIL"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Branded Retail": "Branded Retail"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f46d8f09d587",
+            "label": "Project Type",
+            "name": "project_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f46d6a187340",
+                        "operator": "==",
+                        "value": "COMMUNITY"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Civic": "Civic",
+                "Cultural": "Cultural",
+                "Mission-Driven": "Mission-Driven"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "microsites"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1749831816
+}

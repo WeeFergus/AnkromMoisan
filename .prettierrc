@@ -1,0 +1,6 @@
+{
+  "singleQuote": true,
+  "allowForLoopAfterthoughts": true,
+  "plugins": ["@prettier/plugin-php", "prettier-plugin-tailwindcss"],
+  "tailwindStylesheet": "./assets/styles/style.css"
+}
