@@ -78,7 +78,6 @@ if (!function_exists('ankrom_moisan_setup')):
       'script',
     ]);
 
-
     // Set up the WordPress core custom background feature.
     add_theme_support(
       'custom-background',
@@ -148,7 +147,6 @@ function ankrom_moisan_widgets_init()
   ]);
 }
 add_action('widgets_init', 'ankrom_moisan_widgets_init');
-
 
 /**
  * Enqueue scripts and styles.
@@ -1627,3 +1625,46 @@ function add_modified_time($src)
 
 add_filter('style_loader_src', 'add_modified_time', 99999999, 1);
 add_filter('script_loader_src', 'add_modified_time', 99999999, 1);
+
+/* Add taxonomy to relationship fields on Sector Pages */
+
+add_filter(
+  'acf/fields/relationship/query',
+  'my_acf_relationship_taxonomy_search',
+  10,
+  3
+);
+function my_acf_relationship_taxonomy_search($args, $field, $post_id)
+{
+  // Optional: only run this for a specific relationship field
+  // if ($field['name'] !== 'your_field_name') return $args;
+
+  if (empty($args['s'])) {
+    return $args;
+  }
+
+  $search = $args['s'];
+
+  $terms = get_terms([
+    'taxonomy' => 'portfolio_category',
+    'name__like' => $search,
+    'hide_empty' => false,
+  ]);
+
+  if (!empty($terms) && !is_wp_error($terms)) {
+    $term_ids = wp_list_pluck($terms, 'term_id');
+
+    // Remove default title/content search so it doesn't conflict
+    unset($args['s']);
+
+    $args['tax_query'] = [
+      [
+        'taxonomy' => 'portfolio_category',
+        'field' => 'term_id',
+        'terms' => $term_ids,
+      ],
+    ];
+  }
+
+  return $args;
+}
