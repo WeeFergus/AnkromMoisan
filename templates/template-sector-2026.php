@@ -690,28 +690,44 @@ foreach ($manual_featured_ids as $mid) {
     $newsthumb = get_the_post_thumbnail_url($mid, 'medium');
     $newstitleformatted = ucwords(strtolower(get_the_title($mid)));
     ?>
-    <div class="blogpost">
+    <div class="blogpost hover_arrow_story">
       <a href="<?php echo esc_url($newslink); ?>" target="_blank">
         <div class="thumb" style="background-image: url('<?php echo esc_url(
           $newsthumb
         ); ?>');"></div>
         <div class="txt">
-          <b><?php echo $newstitleformatted; ?></b><br>
+          <div class="txt-wrap">
+           <b><?php echo $newstitleformatted; ?></b><br>
           <?php echo get_the_date('F j, Y', $mid); ?>
+          </div>
+          <div class="arrow_wrap">
+            <div id="cta_arrow">
+              <span class="arrow_right primera black"></span>
+              <span class="arrow_right segunda black"></span>
+            </div>
+          </div>
         </div>
       </a>
     </div>
     <?php
   } else {
     $blogthumb = get_the_post_thumbnail_url($mid, 'large'); ?>
-    <div class="blogpost">
+    <div class="blogpost hover_arrow_story">
       <a href="<?php echo get_permalink($mid); ?>">
         <div class="thumb" style="background-image: url('<?php echo esc_url(
           $blogthumb
         ); ?>');"></div>
         <div class="txt">
-          <b><?php echo get_the_title($mid); ?></b><br>
-          <?php echo get_the_date('F j, Y', $mid); ?>
+          <div class="txt-wrap">
+            <b><?php echo get_the_title($mid); ?></b><br>
+            <?php echo get_the_date('F j, Y', $mid); ?>
+          </div>
+          <div class="arrow_wrap">
+            <div id="cta_arrow">
+              <span class="arrow_right primera black"></span>
+              <span class="arrow_right segunda black"></span>
+            </div>
+          </div>
         </div>
       </a>
     </div>
@@ -755,15 +771,24 @@ if ($remaining > 0) {
     $the_query->the_post();
     $blogthumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
     ?>
-    <div class="blogpost">
+    <div class="blogpost hover_arrow_story">
       <a href="<?php the_permalink(); ?>">
         <div class="thumb" style="background-image: url('<?php echo esc_url(
           $blogthumb
         ); ?>');"></div>
+
         <div class="txt">
-          <b><?php the_title(); ?></b><br>
+          <div class="txt-wrap">
+           <b><?php the_title(); ?></b><br>
           <?php echo get_the_date('F j, Y'); ?>
-        </div>
+          </div>
+          <div class="arrow_wrap">
+            <div id="cta_arrow">
+              <span class="arrow_right primera black"></span>
+              <span class="arrow_right segunda black"></span>
+            </div>
+          </div>
+        </div>  
       </a>
     </div>
     <?php $usedSlots++;
@@ -824,15 +849,23 @@ if ($remaining > 0) {
         $newsthumb = get_the_post_thumbnail_url(get_the_ID(), 'medium');
         $newslink = get_field('news_link');
         ?>
-        <div class="blogpost">
+        <div class="blogpost hover_arrow_story">
           <a href="<?php echo esc_url($newslink); ?>" target="_blank">
             <div class="thumb" style="background-image: url('<?php echo esc_url(
               $newsthumb
             ); ?>');"></div>
             <div class="txt">
-              <b><?php echo $newstitleformatted; ?></b><br>
+              <div class="txt-wrap">
+              <b><?php the_title(); ?></b><br>
               <?php echo get_the_date('F j, Y'); ?>
-            </div>
+              </div>
+              <div class="arrow_wrap">
+                <div id="cta_arrow">
+                  <span class="arrow_right primera black"></span>
+                  <span class="arrow_right segunda black"></span>
+                </div>
+              </div>
+            </div>  
           </a>
         </div>
         <?php $usedSlots++;
@@ -1034,7 +1067,16 @@ if ($remaining > 0) {
   font-weight:700;
 }
 
-.txt b {
+.txt {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+}
+
+.txt-wrap {
+  grid-column: 1/2;
+}
+
+.txt .txt-wrap b {
   background-image: linear-gradient(#fff, #000);
   background-repeat: no-repeat;
   background-position: 0 100%;
@@ -1043,11 +1085,15 @@ if ($remaining > 0) {
   cursor: pointer;
 }
 
-.blogpost:hover .txt b {
+.txt .arrow-wrap {
+  grid-column: 2/3;
+}
+
+.blogpost:hover.txt-wrap .txt b {
   background-size: 100% 2px;
 }
 
-.txt b::after {
+.txt-wrap .txt b::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1060,7 +1106,7 @@ if ($remaining > 0) {
   transition: transform 0.3s ease;
 }
 
-.blogpost:hover .txt b::after {
+.blogpost:hover .txt-wrap .txt b::after {
   transform: scaleX(1);
 }
 
