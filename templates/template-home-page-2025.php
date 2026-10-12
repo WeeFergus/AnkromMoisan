@@ -1286,7 +1286,7 @@ while (have_rows('home_page_top_section')) {
 
 		/* this is needed for the down arrow and dots */
     .d-lg-none {
-        display: none !important;
+     /*   display: none !important; */
     }
 		/*
 	#down-arrows-holder .down-arrows-wrapper {
