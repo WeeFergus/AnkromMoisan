@@ -183,7 +183,7 @@ $currentCategory = $post->post_title;
 </div>
 
 
-<div class="container sector_top_content"> 
+<div class="container sector_top_content">
   <div class="row">
     <?php if (true):/* was for interiors */  ?>
     <div class="col-lg-7 col-md-12 toggle_wrapper">
@@ -199,7 +199,7 @@ $currentCategory = $post->post_title;
         $topsectortitle = get_sub_field('sector_subtitle');
         $topsectorcontent = get_sub_field('project_content');
         ?>
- 
+
       <h2><?php echo $topsectortitle; ?></h2>
       <p><?php echo $topsectorcontent; ?></p>
       <?php
@@ -382,7 +382,7 @@ $currentCategory = $post->post_title;
       <?php endif;
       // if( get_field('sector_sidebar') ):
       ?>
-      
+
      <?php
      $sector_sidebar = get_field('sector_sidebar');
      $sector_sidebar_pdf = $sector_sidebar['sector_pdf'] ?? '';
@@ -410,7 +410,7 @@ $currentCategory = $post->post_title;
       </p>
       <?php endif; ?>
     </div>
-    
+
   </div>
 </div>
 
@@ -609,7 +609,7 @@ foreach ($project_types_array as $pt) {
           ?>
         <?php } ?>
       </div>
-   
+
       <div class="project_content_wrap">
         <?php if (have_rows('top_project_content')) { ?>
         <?php while (have_rows('top_project_content')) {
@@ -788,7 +788,7 @@ if ($remaining > 0) {
               <span class="arrow_right segunda black"></span>
             </div>
           </div>
-        </div>  
+        </div>
       </a>
     </div>
     <?php $usedSlots++;
@@ -865,7 +865,7 @@ if ($remaining > 0) {
                   <span class="arrow_right segunda black"></span>
                 </div>
               </div>
-            </div>  
+            </div>
           </a>
         </div>
         <?php $usedSlots++;
@@ -1028,7 +1028,7 @@ if ($remaining > 0) {
   #cta_arrow {
     width:30px;
   }
- 
+
 
 #blogposts {
   display: grid;
@@ -1054,7 +1054,7 @@ if ($remaining > 0) {
 }
 
 .blogpost .thumb {
-  width: 100%;  
+  width: 100%;
   aspect-ratio: 1 / 1;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1062,7 +1062,7 @@ if ($remaining > 0) {
   margin-bottom: 10px;
 }
 
-.blogpost .txt a { 
+.blogpost .txt a {
   display: block;
   font-weight:700;
 }
@@ -1110,7 +1110,7 @@ if ($remaining > 0) {
   transform: scaleX(1);
 }
 
- 
+
 
 
 
